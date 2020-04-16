@@ -33,6 +33,7 @@ app.get("/api/goods", function(req, res) {
     res.send(goods);
   });
 });
+
 app.get("/api/goods/:goodsName", function(req, res) {
   const goodsName = req.params.goodsName;
   const collection = req.app.locals.collection;
